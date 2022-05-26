@@ -1,0 +1,21 @@
+{
+  "name": "testapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run watch",
+    "watch": "npm-run-all --parallel watch:1 watch:2",
+    "build": "npm-run-all --parallel build:1 build:2",
+    "watch:1": "cd mithril-original && npm run watch",
+    "build:1": "cd mithril-original && npm run build",
+    "watch:2": "cd mithril-support_for_dynamic_components && npm run watch",
+    "build:2": "cd mithril-support_for_dynamic_components && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "K.Tsuru <5612289+14e28f87@users.noreply.github.com> (https://github.com/14e28f87)",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

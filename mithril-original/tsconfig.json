@@ -1,0 +1,36 @@
+{
+	"compilerOptions": {
+		"sourceMap": true,
+		"target": "es5",				/* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', or 'ESNEXT'. */
+		"module": "esnext",				/* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
+
+		"allowSyntheticDefaultImports": true,
+
+		"moduleResolution": "node",		
+		"lib": [						/* Specify library files to be included in the compilation:  */
+			"dom",
+			"es2017",
+			"es2018.promise"
+		],
+		"outDir" : "./dist",
+		"baseUrl" : "./src",
+		"paths": {
+			"*": [ "*" ]
+		},
+		"noImplicitThis": true,
+		"strictNullChecks": true,
+
+		"allowJs": true,
+		"resolveJsonModule": true,
+		"downlevelIteration": true,
+		"jsx": "react",
+		"jsxFactory": "m",
+	},
+	"include": [
+		"./src/**/*.ts",
+		"./src/**/*.tsx"
+	],
+	"exclude": [
+		"node_modules"
+	]
+}
